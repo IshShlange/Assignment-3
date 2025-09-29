@@ -15,7 +15,7 @@ public class AudioBookReader implements BookReader {
 
     @Override
     public void readBook(String title, String author) {
-        System.out.println("🎧 Listening to audiobook: '" + title + "' by " + author);
+        System.out.println(" Listening to audiobook: '" + title + "' by " + author);
         System.out.println("   - Playback speed: " + playbackSpeed + "x");
         System.out.println("   - Audio streaming");
         System.out.println("   - Chapter navigation");
@@ -25,4 +25,5 @@ public class AudioBookReader implements BookReader {
     public String getReaderType() {
         return "Audio Book Reader (Speed: " + playbackSpeed + "x)";
     }
+
 }
